@@ -8,6 +8,7 @@ var sky = (function() {
     $sun = $(".sun");
     $wrapper = $(".wrapper");
     $body = $("body");
+    $greeting = $(".greeting");
 
     // call API
     var callAPI = function() {
@@ -61,8 +62,23 @@ var sky = (function() {
         var medianDaylight = moment(sunrise, "HH:mm:ss").add((daylightMinutes / 2), "minutes").format("HH:mm:ss");
         $sun.hide();
 
+        if (now.format("HH:mm:ss") <= moment("03:00:00", "HH:mm:ss").format("HH:mm:ss") && now.format("HH:mm:ss") > moment("00:00:01", "HH:mm:ss").format("HH:mm:ss")) {
+            makeStars(wrapperWidth, wrapperHeight);
+            $body.removeClass().addClass("night");
+            $greeting.text("Having a good night?");
+
+        }
+
+        else if (now.format("HH:mm:ss") <= sunrise && now.format("HH:mm:ss") > moment("03:00:00", "HH:mm:ss").format("HH:mm:ss")) {
+            makeStars(wrapperWidth, wrapperHeight);
+            $body.removeClass().addClass("night");
+            $greeting.text("You're up early!");
+
+        }
+
+
         // if daytime
-        if (now.format("HH:mm:ss") >= sunrise && now.format("HH:mm:ss") < sunset) {
+        else if (now.format("HH:mm:ss") >= sunrise && now.format("HH:mm:ss") < sunset) {
 
             // set position left to right
             $sun.css("left", (minsFromSunrise * widthFrac)).show();
@@ -75,10 +91,12 @@ var sky = (function() {
 
                 $sun.css("top", ((timeTilNoon / totalMorningHours) * wrapperHeight) + "px");
                 $body.removeClass().addClass("midday");
+                $greeting.text("Good morning!");
 
                 // if near sunrise
                 if (now.diff(moment(sunrise, "HH:mm:ss"), "hours") <= 1) {
                     $body.removeClass().addClass("dusk");
+                    $greeting.text("Good morning!");
                 }
             }
             else if (now.format("HH:mm:ss") >= medianDaylight) {
@@ -86,27 +104,32 @@ var sky = (function() {
                 var totalAfternoonHours = moment(sunset, "HH:mm:ss").diff(moment(medianDaylight, "HH:mm:ss"), "minutes", true);
 
                 $sun.css("top", ((afternoonProgress / totalAfternoonHours) * wrapperHeight) + "px");
+                $greeting.text("Good afternoon!");
 
                 // if 3 hours before sunset
                 if (moment(sunset, "HH:mm:ss").diff(now, "hours") <=3 && moment(sunset, "HH:mm:ss").diff(now, "hours") > 1) {
                     $body.removeClass().addClass("late-day");
+                    $greeting.text("Good afternoon!");
                 }
 
                 // if 1 hour til sunset
                 else if (moment(sunset, "HH:mm:ss").diff(now, "hours") <= 1 ) {
                     $body.removeClass().addClass("sunset");
+                    $greeting.text("Good evening!");
                 }            
             }
         } 
         // if between sunset and dusk
-        else if (now.format("HH:mm:ss") >= sunset && now.format("HH:mm:ss") < sunset.add(1, "hour")) {
+        else if (now.format("HH:mm:ss") >= sunset && now < moment(sunset, "HH:mm:ss").add(1, "hour")) {
             $sun.hide();
             $body.removeClass().addClass("dusk");
+            $greeting.text("Good evening!");
         } 
 
         else {
             makeStars(wrapperWidth, wrapperHeight);
             $body.removeClass().addClass("night");
+            $greeting.text("Good evening!");
         }
 
     }
