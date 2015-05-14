@@ -22,7 +22,7 @@ var sky = (function() {
 
     var sunPosition = function(data) {
 
-        now = moment("17:30:00", "HH:mm:ss");
+        now = moment();
 
         // get sunrise into correct format
         if (data && data.results.sunrise) {
