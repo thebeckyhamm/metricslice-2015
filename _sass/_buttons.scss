@@ -1,0 +1,12 @@
+.btn {
+    border: 1px solid $blue;
+    border-radius: 25px;
+    color: $blue;
+    display: inline-block;
+    padding: .25em .5em;
+    transition: all .1s ease-in;
+    &:hover {
+        background-color: $blue;
+        color: $white;
+    }
+}

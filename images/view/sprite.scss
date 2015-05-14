@@ -1,0 +1,54 @@
+%svg-common {
+	background: url(svg/sprite.view.svg) no-repeat;
+}
+
+.svg-codepen {
+	@extend %svg-common;
+	background-position: 43.29896907216495% 96.65217391304348%;
+}
+
+.svg-codepen-dims {
+	width: 40px;
+	height: 40px;
+}
+
+.svg-email {
+	@extend %svg-common;
+	background-position: 70.2% 0;
+}
+
+.svg-email-dims {
+	width: 42px;
+	height: 42px;
+}
+
+.svg-github {
+	@extend %svg-common;
+	background-position: 0 99.53731343283582%;
+}
+
+.svg-github-dims {
+	width: 42px;
+	height: 42px;
+}
+
+.svg-phone {
+	@extend %svg-common;
+	background-position: 99.71559633027523% 0;
+}
+
+.svg-phone-dims {
+	width: 28px;
+	height: 28px;
+}
+
+.svg-twitter {
+	@extend %svg-common;
+	background-position: 0 0;
+}
+
+.svg-twitter-dims {
+	width: 66.69px;
+	height: 66.69px;
+}
+

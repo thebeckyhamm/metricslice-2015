@@ -1,0 +1,132 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+
+    <!--meta and favicon tags-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="{{ page.description }}" />
+    <meta name="keywords" content="{{ page.keywords }}" />
+    <meta name="robots" content="all" />
+    <meta name="author" content="Becky Hamm, MetricSlice LLC" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <link rel="shortcut icon" type="image/x-icon" href="{{ site.url }}/favicon.ico"  />
+    <link rel="icon" type="image/x-icon" href="{{ site.url }}/favicon.ico" />
+
+    <!--facebook tags-->
+    <meta property="fb:admins" content="@thebeckyhamm"/>
+    <meta property="og:title" content="MetricSlice"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="http://metricslice.com/"/>
+    <meta property="og:image" content="http://metricslice.com/images/fb-icon.png"/>
+    <meta property="og:site_name" content="MetricSlice"/>
+    <meta property="og:description"
+    content="Simplifying your slice of the web with development and design for websites and applications."/>
+
+
+
+    <title>{{ page.title }}</title>
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>    
+    <link rel="stylesheet" type="text/css" href="{{ site.url }}/css/style.min.css" />
+  
+
+    <!-- GA -->
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-28662803-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+    <script src="../scripts/modernizr.min.js"></script>
+
+
+</head>
+
+<body class="late-day">
+    {% include symbol/svg/sprite.symbol.svg %}
+
+    <a href="#" class="menu-link">Menu</a>
+
+    <aside class="aside">
+        <header class="header">
+        {% include header.html %}
+        <nav class="nav">
+            <ul class="main-menu">
+                <li><a href="{{ site.url }}/index.html">Home</a></li>
+                <li><a href="{{ site.url }}/services">Services</a></li>
+                <li><a href="{{ site.url }}/portfolio">Portfolio</a></li>
+                <li><a href="{{ site.url }}/blog">Blog</a></li>
+                <li><a href="{{ site.url }}/about">About</a></li>
+            </ul>
+
+            
+        </nav> 
+   
+        </header>
+        <div class="aside-icons">
+            <a href="tel:404-694-1204"><svg class="icon"><use xlink:href="#phone" /></svg></a>
+            <a href="mailto:info@metricslice.com"><svg class="icon"><use xlink:href="#email" /></svg></a>
+            <a href="http://twitter.com/thebeckyhamm"><svg class="icon"><use xlink:href="#twitter" /></svg></a>
+            <a href="http://codepen.com/thebeckyhamm"><svg class="icon"><use xlink:href="#codepen" /></svg></a>
+            <a href="http://github.com/thebeckyhamm"><svg class="icon"><use xlink:href="#github" /></svg></a>
+        </div>
+
+        {% include footer.html %}
+
+    </aside>
+
+    <div class="wrapper ">
+        <div class="sun"></div>
+        <div class="clearfix"></div>
+        <div class="content">
+            
+        {{ content }}
+
+        </div>
+    </div>
+    {% include wave.html %}
+
+
+    
+
+        
+
+
+
+
+
+
+     <!--[if gte IE 8]>     
+     <script type="text/javascript" src="{{ site.url }}/scripts/respond.min.js"></script>
+     <script type="text/javascript" src="{{ site.url }}/scripts/html5shiv.js"></script>
+     <![endif]-->
+     <script>
+$(document).ready(function() {
+        $('body').addClass('js');
+            var $menulink = $('.menu-link'),
+            $aside = $('.aside'),
+            $menuExit = $('.menu-exit');
+        
+        $menulink.click(function(e) {
+            e.preventDefault();
+            $menulink.toggleClass('active');
+            $aside.toggleClass('active');
+        });
+
+        $menuExit.click(function(e) {
+            e.preventDefault();
+            $menulink.toggleClass('active');
+            $aside.toggleClass('active');
+        });
+        
+});
+
+
+</script>
+</body>
+</html>

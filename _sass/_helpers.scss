@@ -1,0 +1,63 @@
+
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.clear {
+	clear: both;    
+}
+
+.pull-right {
+	float: none;
+	@media (min-width: $baby-bear) {
+		float: right;
+	}
+}
+
+.pull-left {
+	float: none;
+	@media (min-width: $baby-bear) {
+		float: left;
+	}
+}
+
+.centered {
+	//text-align: center;
+	margin: 0 auto;
+}
+
+.narrow{
+	max-width: 35em;
+	margin: 0 auto;
+}
+
+.red {
+	color: red;
+}
+
+.break-word {
+	word-wrap: break-word;
+}
+
+.round {
+	border-radius: 50%;
+	max-width: 250px;
+}
+
+.inline {
+	display: inline;
+}
+
+.blue {
+	background-color: $blue;
+	color: $white;
+}
+
+.border {
+	border: 1px solid $light-gray;
+}
+
+

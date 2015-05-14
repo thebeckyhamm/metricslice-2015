@@ -1,0 +1,86 @@
+.midday {
+    background: #87e0fd;
+    background: linear-gradient(to bottom,  #33ACE0 0%,#87e0fd 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33ACE0', endColorstr='#87e0fd',GradientType=0 );
+}
+
+.late-day {
+    background: #FAEDB4;
+    background: linear-gradient(to bottom, #8FCCE4 0%, #FAEDB4 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8FCCE4', endColorstr='#FAEDB4',GradientType=0 );
+}
+
+.sunset {
+    background: #7d8e98;
+    background: linear-gradient(to bottom,  #F1EBBC 0%,#fdce8b 57%,#FF6A32 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#F1EBBC', endColorstr='#FF6A32',GradientType=0 );
+    color: $sec-dark;
+    .menu-link {
+        color: $sec-dark;
+    }
+    .headline > * {
+        color: $sec-dark;
+    }
+}
+
+.dusk {
+    background: #2C4356;
+    background: linear-gradient(to bottom, #2C4356 0%, #958774 70%, #FFF7B9 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2C4356', endColorstr='#FFF7B9',GradientType=0 );
+    color: white;
+    .menu-link {
+        color: white;
+    }
+    .headline > * {
+        color: white;
+    }
+}
+
+.night {
+    background: #0D1A26;
+    background: linear-gradient(to bottom, #0D1A26 0%, #1A2C42 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2C4356', endColorstr='#1A2C42',GradientType=0 );
+    color: white;
+    .menu-link {
+        color: white;
+    }
+    .headline > * {
+        color: white;
+    }
+}
+
+.waves {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -1;
+    @include bp($grandpa-bear) {
+        width: 100%;  
+    }
+}
+
+
+
+.sun {
+  background-color: yellow;
+  border-radius: 50%;
+  box-shadow: 0 0 5px 0 yellow;
+  height: 100px;
+  //left: 5%;
+  width: 100px;
+  position: absolute;
+  bottom: 0;
+  //transition: left 1s ease-in, bottom 1s ease-in;
+  z-index: -2;
+  animation: sunshine 5s infinite;
+}
+
+.star {
+    background-color: rgba(252, 253, 207, .8);
+    border-radius: 50%;
+    height: 5px;
+    position: absolute;
+    width: 5px;
+    z-index: -3;
+}

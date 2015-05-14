@@ -1,0 +1,10 @@
+
+.footer {
+    color: $blue;
+	padding: 1em;
+    position: absolute;
+    bottom: 0;
+    @include bp($mama-bear) {
+        color: $white;
+    }
+}

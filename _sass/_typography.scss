@@ -1,0 +1,208 @@
+@font-face {
+  font-family: 'AleoLight';
+  src: url('../fonts/aleo-light-webfont.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/aleo-light-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/aleo-light-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/aleo-light-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/aleo-light-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/aleo-light-webfont.svg#svgaleo') format('svg'); /* Legacy iOS */
+}
+
+html {  
+	font-size: 1.2em;
+	font-family: $base-font;
+  font-weight: 300;
+  word-spacing: .05em;
+}
+
+h1, h2, h3, h4{
+  font-family: $heading-font;
+  font-weight: 300;
+  line-height:100%;
+  margin: 0 0 .3em 0;
+}
+
+h1, .h1{
+  font-size: 2.5em * .6;
+  letter-spacing: -1px;
+  @include bp($mama-bear) {
+    font-size: 2.5em * .8;
+  }
+  @include bp($papa-bear) {
+    font-size: 2.5em;
+  }
+}
+
+h2, .h2{
+  font-size: 2.2em * .7;
+  @include bp($mama-bear) {
+    font-size: 2.2em * .8;
+  }
+  @include bp($papa-bear) {
+    font-size: 2.2em;
+  }
+}
+
+h3, .h3 {
+  font-size: 2em * .6;
+  @include bp($mama-bear) {
+    font-size: 1.8em * .8;
+  }
+  @include bp($papa-bear) {
+    font-size: 1.8em;
+  }
+  }
+
+h4, .h4 {
+  font-family: $comp-font;
+  font-size: 1.4em * .9;
+  line-height: 120%;
+  @include bp($mama-bear) {
+    font-size: 1.4em;
+  }
+
+}
+
+h4.inline, h3.inline, h1.inline {
+  line-height: 1.5;
+}
+
+.post p + h3, .post p + h4, .post p + h2 {
+  margin-top: 1em;
+}
+
+.post h2, .post h3, .post h4 {
+  margin-top: 1em;
+}
+
+
+p, li{
+  line-height: 140%;
+  margin: 0 0 .5em 0;
+  @include bp($mama-bear) {
+   line-height: 150%;
+ }
+}
+
+
+
+a {
+ color:$blue;
+ text-decoration: none;
+ -webkit-transition: border-color 0.2s ease-in-out;  
+ -moz-transition: border-color 0.2s ease-in-out;
+ -ms-transition: border-color 0.2s ease-in-out;
+ -o-transition: border-color 0.2s ease-in-out;
+ transition: border-color 0.2s ease-in-out;
+}
+
+
+
+.footer a {
+  border: none;
+  @include transition(color);
+  &:hover {
+    color: $white;
+  }
+}
+
+
+
+
+
+::selection{
+  background-color:rgba( $prim-light, .5);
+}
+::-moz-selection{
+  background-color:rgba( $prim-light, .5);
+}
+
+
+strong {
+  font-weight: 700;
+}
+
+.normal {
+  font-weight: 400;
+}
+
+.text-smaller {
+  font-size: .8em;  
+}
+
+.drop-cap:first-letter {
+  color: $prim-light;
+  float: left;
+  font-size: 3em;
+  padding: .2em .2em .2em 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-highlight {
+  color: $prim-light;
+}
+
+.index {
+  color: $white;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.list-unordered > li, .post ul li {
+  list-style-type: disc;  
+  list-style-position: outside;
+  margin-left: 1em;
+}
+
+.list-ordered > li, .post ol li {
+  list-style-type: decimal-leading-zero;
+  list-style-position: outside;
+  margin-left: 1em;
+ }
+
+ pre {
+  background-color: $lightest-gray;
+  padding: 1em;
+ }
+
+ code {
+  background-color: $lightest-gray;
+ }
+
+ hr {
+  background-color: $light-gray;
+  border: none;
+  height: 1px;
+  margin: 1em;
+
+ }
+
+.month, .day, .year {
+  line-height: 1;
+  margin: 0;
+}
+
+.month {
+  font-size: 1.5em;
+}
+
+.day {
+  font-size: 2.5em;
+}
+
+.year {
+  font-size: 1.2em;
+}
+
+
+

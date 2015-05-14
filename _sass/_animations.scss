@@ -1,0 +1,23 @@
+@keyframes sunshine {
+
+    0%   { box-shadow: 0 0 5px 0 yellow; }
+    50% { box-shadow: 0 0 8px 0 orange; }
+    100% { box-shadow: 0 0 5px 0 yellow; } 
+
+}
+
+@keyframes wave1 {
+
+    0%   { transform: translate(0, 0); }
+    50% { transform: translate(5px, 5px); } 
+    100% { transform: translate(0, 0); } 
+
+}
+
+@keyframes wave2 {
+
+    0%   { transform: translate(0, 0); }
+    50% { transform: translate(-5px, 0); } 
+    100% { transform: translate(0, 0); } 
+
+}
