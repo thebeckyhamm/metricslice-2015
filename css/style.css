@@ -1030,7 +1030,7 @@ img {
     @media (min-width: 46em) {
       .header .logo svg {
         width: 100%;
-        max-width: 100%; } }
+        max-width: 300px; } }
 
 .headline {
   color: #33302a;
@@ -1058,9 +1058,7 @@ img {
 
 .footer {
   color: #006BDF;
-  padding: 1em;
-  position: absolute;
-  bottom: 0; }
+  padding: 1em; }
   @media (min-width: 46em) {
     .footer {
       color: #fff; } }
