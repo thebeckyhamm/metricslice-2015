@@ -4,163 +4,72 @@
     Grid
 \*------------------------------------*/
 
-// .grid {
-//   @extend .clearfix;
-// }
-// .col-20, .col-30, .col-33-50, .col-33, .col-33-100, .col-40, .col-50, .col-60, .col-66, .col-70, .col-80, .col-max {
-//   margin: 0 auto;
-// }
-// @media (min-width: $mama-bear){
-//   [class*="col"] {
-//     float:left;
-//     padding: 0;
-//   }
-//   .col-20 {
-//     width: 20%;
-//   }
-//   .col-25 {
-//     width: 25%;
-//   }
+.grid {
+  @extend .clearfix;
+}
+.col-20, .col-30, .col-33-50, .col-33, .col-33-100, .col-40, .col-50, .col-60, .col-66, .col-70, .col-80, .col-max {
+  margin: 0 auto;
+}
+@media (min-width: $mama-bear){  
+  [class*="col"] {
+    float:left;
+    padding: 0;
+  }
+  .col-20 {
+    width: 20%;
+  }
+  .col-25 {
+    width: 25%;
+  }
 
-//   .col-30 {
-//     width: 30%;
-//   }
-//   .col-33 {
-//     width: 33%;
-//   }
+  .col-30 {
+    width: 30%;
+  }
+  .col-33 {
+    width: 33%;
+  }
   
-//   .col-40 {
-//     width: 40%;
-//   }
-//   .col-50{
-//     width: 50%;
-//   }
-//   .col-60 {
-//     width: 60%;
-//   }
-//   .col-66 {
-//     width: 66%;
-//   }
-//   .col-70 {
-//     width: 70%;
-//   }
-//   .col-80 {
-//     width: 80%;
-//   }
-//   .col-max {
-//     max-width: 40em;
-//   }
-//   .col-auto {
-//     width: auto;
-//   }
-//   .col-right {
-//     float: right;
-//   }
-
-// }
-// @media (min-width: $papa-bear) {
-//   .col-33-50 {
-//     width: 50%;
-//   }
-// }
-
-
-// .col-50:nth-child(2n):after {
-//   content: "";
-//   clear: both;
-//   display: table;
-// }
-
-
-$gutter: 1rem; 
-$min-width: 100px; // minimum width of item before it starts wrapping for you
-$baby-bear: 30rem;
-
-@mixin bp($width) {
-    @media (min-width: $width) {
-        @content;       
-    }
-}
-
-.grid:after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-.flexbox .grid {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: stretch;
-    justify-content: space-between;
-}
-
-[class*="col-"] {
-    width: calc(100% - #{$gutter * 2});      
-    @include bp($baby-bear) {
-        float: left;  
-    }
-}
-
-@include bp($baby-bear) {
-    $i: 5;
-
-    @while $i <= 100 {
-        .col-#{$i} {
-            width: calc(#{$i}% - #{$gutter * 2});
-        }
-        $i: $i + 5;
-    } 
-
-    .col-33 {
-        width: calc(33.33% - #{$gutter * 2});
-    }   
-
-    .col-66 {
-        width: calc(66.66% - #{$gutter * 2});
-    }
-
-}
-
-
-.col-equal {
-    display: inline-block;
+  .col-40 {
+    width: 40%;
+  }
+  .col-50{
+    width: 50%;
+  }
+  .col-60 {
+    width: 60%;
+  }
+  .col-66 {
+    width: 66%;
+  }
+  .col-70 {
+    width: 70%;
+  }
+  .col-80 {
+    width: 80%;
+  }
+  .col-max {
+    max-width: 40em;
+  }
+  .col-auto {
     width: auto;
-}
-
-.flexbox {
-
-    [class*="col-"] {
-        float: none;
-        min-width: $min-width;
-        width: auto;
-    }
-
-    $i: 5;
-
-    @while $i <= 100 {
-        .col-#{$i} {
-            flex: #{$i} 0 0;
-        }
-        $i: $i + 5;
-    } 
-
-    .col-33 {
-        flex: 33.33 0 0;
-    }   
-
-    .col-66 {
-        flex: 66.66 0 0;
-    }
-
-    .col-equal {
-        flex: 1 0 0;
-    }
-
-    .col-spaced {
-        flex: 1 0 auto;
-    }
-
+  }
+  .col-right {
+    float: right;
+  }
 
 }
+@media (min-width: $papa-bear) {
+  .col-33-50 {
+    width: 50%;
+  }
+}
+
+
+.col-50:nth-child(2n):after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
 

@@ -419,7 +419,7 @@ th {
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0); } }
 
-.clearfix:after {
+.clearfix:after, .grid:after {
   content: "";
   display: table;
   clear: both; }
@@ -628,232 +628,48 @@ hr {
 
 /*------------------------------------*    Grid
 \*------------------------------------*/
-.grid:after {
+.col-20, .col-30, .col-33-50, .col-33, .col-33-100, .col-40, .col-50, .col-60, .col-66, .col-70, .col-80, .col-max {
+  margin: 0 auto; }
+
+@media (min-width: 46em) {
+  [class*="col"] {
+    float: left;
+    padding: 0; }
+  .col-20 {
+    width: 20%; }
+  .col-25 {
+    width: 25%; }
+  .col-30 {
+    width: 30%; }
+  .col-33 {
+    width: 33%; }
+  .col-40 {
+    width: 40%; }
+  .col-50 {
+    width: 50%; }
+  .col-60 {
+    width: 60%; }
+  .col-66 {
+    width: 66%; }
+  .col-70 {
+    width: 70%; }
+  .col-80 {
+    width: 80%; }
+  .col-max {
+    max-width: 40em; }
+  .col-auto {
+    width: auto; }
+  .col-right {
+    float: right; } }
+
+@media (min-width: 60em) {
+  .col-33-50 {
+    width: 50%; } }
+
+.col-50:nth-child(2n):after {
   content: "";
   clear: both;
   display: table; }
-
-.flexbox .grid {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-  -webkit-box-align: stretch;
-  -webkit-align-items: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
-
-[class*="col-"] {
-  width: calc(100% - 2rem); }
-  @media (min-width: 30rem) {
-    [class*="col-"] {
-      float: left; } }
-
-@media (min-width: 30rem) {
-  .col-5 {
-    width: calc(5% - 2rem); }
-  .col-10 {
-    width: calc(10% - 2rem); }
-  .col-15 {
-    width: calc(15% - 2rem); }
-  .col-20 {
-    width: calc(20% - 2rem); }
-  .col-25 {
-    width: calc(25% - 2rem); }
-  .col-30 {
-    width: calc(30% - 2rem); }
-  .col-35 {
-    width: calc(35% - 2rem); }
-  .col-40 {
-    width: calc(40% - 2rem); }
-  .col-45 {
-    width: calc(45% - 2rem); }
-  .col-50 {
-    width: calc(50% - 2rem); }
-  .col-55 {
-    width: calc(55% - 2rem); }
-  .col-60 {
-    width: calc(60% - 2rem); }
-  .col-65 {
-    width: calc(65% - 2rem); }
-  .col-70 {
-    width: calc(70% - 2rem); }
-  .col-75 {
-    width: calc(75% - 2rem); }
-  .col-80 {
-    width: calc(80% - 2rem); }
-  .col-85 {
-    width: calc(85% - 2rem); }
-  .col-90 {
-    width: calc(90% - 2rem); }
-  .col-95 {
-    width: calc(95% - 2rem); }
-  .col-100 {
-    width: calc(100% - 2rem); }
-  .col-33 {
-    width: calc(33.33% - 2rem); }
-  .col-66 {
-    width: calc(66.66% - 2rem); } }
-
-.col-equal {
-  display: inline-block;
-  width: auto; }
-
-.flexbox [class*="col-"] {
-  float: none;
-  min-width: 100px;
-  width: auto; }
-
-.flexbox .col-5 {
-  -webkit-box-flex: 5;
-  -webkit-flex: 5 0 0;
-      -ms-flex: 5 0 0;
-          flex: 5 0 0; }
-
-.flexbox .col-10 {
-  -webkit-box-flex: 10;
-  -webkit-flex: 10 0 0;
-      -ms-flex: 10 0 0;
-          flex: 10 0 0; }
-
-.flexbox .col-15 {
-  -webkit-box-flex: 15;
-  -webkit-flex: 15 0 0;
-      -ms-flex: 15 0 0;
-          flex: 15 0 0; }
-
-.flexbox .col-20 {
-  -webkit-box-flex: 20;
-  -webkit-flex: 20 0 0;
-      -ms-flex: 20 0 0;
-          flex: 20 0 0; }
-
-.flexbox .col-25 {
-  -webkit-box-flex: 25;
-  -webkit-flex: 25 0 0;
-      -ms-flex: 25 0 0;
-          flex: 25 0 0; }
-
-.flexbox .col-30 {
-  -webkit-box-flex: 30;
-  -webkit-flex: 30 0 0;
-      -ms-flex: 30 0 0;
-          flex: 30 0 0; }
-
-.flexbox .col-35 {
-  -webkit-box-flex: 35;
-  -webkit-flex: 35 0 0;
-      -ms-flex: 35 0 0;
-          flex: 35 0 0; }
-
-.flexbox .col-40 {
-  -webkit-box-flex: 40;
-  -webkit-flex: 40 0 0;
-      -ms-flex: 40 0 0;
-          flex: 40 0 0; }
-
-.flexbox .col-45 {
-  -webkit-box-flex: 45;
-  -webkit-flex: 45 0 0;
-      -ms-flex: 45 0 0;
-          flex: 45 0 0; }
-
-.flexbox .col-50 {
-  -webkit-box-flex: 50;
-  -webkit-flex: 50 0 0;
-      -ms-flex: 50 0 0;
-          flex: 50 0 0; }
-
-.flexbox .col-55 {
-  -webkit-box-flex: 55;
-  -webkit-flex: 55 0 0;
-      -ms-flex: 55 0 0;
-          flex: 55 0 0; }
-
-.flexbox .col-60 {
-  -webkit-box-flex: 60;
-  -webkit-flex: 60 0 0;
-      -ms-flex: 60 0 0;
-          flex: 60 0 0; }
-
-.flexbox .col-65 {
-  -webkit-box-flex: 65;
-  -webkit-flex: 65 0 0;
-      -ms-flex: 65 0 0;
-          flex: 65 0 0; }
-
-.flexbox .col-70 {
-  -webkit-box-flex: 70;
-  -webkit-flex: 70 0 0;
-      -ms-flex: 70 0 0;
-          flex: 70 0 0; }
-
-.flexbox .col-75 {
-  -webkit-box-flex: 75;
-  -webkit-flex: 75 0 0;
-      -ms-flex: 75 0 0;
-          flex: 75 0 0; }
-
-.flexbox .col-80 {
-  -webkit-box-flex: 80;
-  -webkit-flex: 80 0 0;
-      -ms-flex: 80 0 0;
-          flex: 80 0 0; }
-
-.flexbox .col-85 {
-  -webkit-box-flex: 85;
-  -webkit-flex: 85 0 0;
-      -ms-flex: 85 0 0;
-          flex: 85 0 0; }
-
-.flexbox .col-90 {
-  -webkit-box-flex: 90;
-  -webkit-flex: 90 0 0;
-      -ms-flex: 90 0 0;
-          flex: 90 0 0; }
-
-.flexbox .col-95 {
-  -webkit-box-flex: 95;
-  -webkit-flex: 95 0 0;
-      -ms-flex: 95 0 0;
-          flex: 95 0 0; }
-
-.flexbox .col-100 {
-  -webkit-box-flex: 100;
-  -webkit-flex: 100 0 0;
-      -ms-flex: 100 0 0;
-          flex: 100 0 0; }
-
-.flexbox .col-33 {
-  -webkit-box-flex: 33.33;
-  -webkit-flex: 33.33 0 0;
-      -ms-flex: 33.33 0 0;
-          flex: 33.33 0 0; }
-
-.flexbox .col-66 {
-  -webkit-box-flex: 66.66;
-  -webkit-flex: 66.66 0 0;
-      -ms-flex: 66.66 0 0;
-          flex: 66.66 0 0; }
-
-.flexbox .col-equal {
-  -webkit-box-flex: 1;
-  -webkit-flex: 1 0 0;
-      -ms-flex: 1 0 0;
-          flex: 1 0 0; }
-
-.flexbox .col-spaced {
-  -webkit-box-flex: 1;
-  -webkit-flex: 1 0 auto;
-      -ms-flex: 1 0 auto;
-          flex: 1 0 auto; }
 
 .menu-link {
   color: #33302a;
@@ -876,7 +692,7 @@ hr {
     box-shadow: 0 0.25em 0 0 #33302a, 0 0.5em 0 0 #33302a; }
   .menu-link:hover {
     color: #006BDF; }
-  @media (min-width: 46em) {
+  @media all and (min-width: 46em) {
     .menu-link {
       display: none; } }
 
@@ -894,7 +710,7 @@ hr {
     padding: .25em;
     text-transform: uppercase;
     width: 100%; }
-    @media (min-width: 46em) {
+    @media all and (min-width: 46em) {
       .main-menu a {
         color: #fff;
         border-bottom: rgba(0, 0, 0, 0.5);
@@ -913,7 +729,7 @@ body {
   background-size: cover;
   overflow-x: hidden;
   position: relative; }
-  @media (min-width: 46em) {
+  @media all and (min-width: 46em) {
     body {
       display: -webkit-box;
       display: -webkit-flex;
@@ -939,7 +755,7 @@ body {
           transition: left 0.2s ease-in-out;
   width: 100%;
   z-index: 1; }
-  @media (min-width: 46em) {
+  @media all and (min-width: 46em) {
     .aside {
       background-color: rgba(0, 0, 0, 0.4);
       -webkit-box-flex: 0;
@@ -955,7 +771,7 @@ body {
 .wrapper {
   overflow: hidden;
   position: relative; }
-  @media (min-width: 46em) {
+  @media all and (min-width: 46em) {
     .wrapper {
       min-height: 100vh;
       -webkit-box-flex: 2;
@@ -968,7 +784,7 @@ body {
   max-width: 1200px;
   padding: 1em;
   padding-bottom: 150px; }
-  @media (min-width: 46em) {
+  @media all and (min-width: 46em) {
     .content {
       margin-top: 10vh; } }
 
@@ -987,7 +803,7 @@ img {
   background-size: 75%;
   background-repeat: no-repeat;
   min-height: 200px; }
-  @media (min-width: 30rem) {
+  @media (min-width: 30em) {
     .contact .me {
       background-size: 50%;
       min-height: 300px; } }
@@ -1011,7 +827,7 @@ img {
   font-size: 1.5em;
   padding: .5em;
   width: 20%; }
-  @media (min-width: 46em) {
+  @media all and (min-width: 46em) {
     .header .menu-exit {
       display: none; } }
 
@@ -1019,7 +835,7 @@ img {
   display: inline-block;
   float: left;
   width: 80%; }
-  @media (min-width: 46em) {
+  @media all and (min-width: 46em) {
     .header .logo {
       float: none;
       padding: 0 0.5em;
@@ -1027,7 +843,7 @@ img {
   .header .logo svg {
     max-width: 200px;
     width: 80%; }
-    @media (min-width: 46em) {
+    @media all and (min-width: 46em) {
       .header .logo svg {
         width: 100%;
         max-width: 300px; } }
@@ -1044,7 +860,7 @@ img {
   .headline > * {
     max-width: 80%;
     margin: 0 auto 0.3em auto; }
-  @media (min-width: 46em) {
+  @media all and (min-width: 46em) {
     .headline {
       margin-top: 20vh; } }
 
@@ -1059,7 +875,7 @@ img {
 .footer {
   color: #006BDF;
   padding: 1em; }
-  @media (min-width: 46em) {
+  @media all and (min-width: 46em) {
     .footer {
       color: #fff; } }
 
@@ -1082,7 +898,7 @@ body > svg:first-of-type {
   width: 40px;
   -webkit-transition: background-color 0.2s ease-in;
           transition: background-color 0.2s ease-in; }
-  @media (min-width: 46em) {
+  @media all and (min-width: 46em) {
     .icon {
       border: 1px solid #fff;
       height: 35px;
@@ -1092,19 +908,19 @@ body > svg:first-of-type {
 
 #phone g, #email path, #github path, #twitter path, #codepen path {
   fill: #006BDF; }
-  @media (min-width: 46em) {
+  @media all and (min-width: 46em) {
     #phone g, #email path, #github path, #twitter path, #codepen path {
       fill: #fff; } }
 
 .metricslice > path {
   fill: #006BDF; }
-  @media (min-width: 46em) {
+  @media all and (min-width: 46em) {
     .metricslice > path {
       fill: #fff; } }
 
 .pie > path {
   fill: #006BDF; }
-  @media (min-width: 46em) {
+  @media all and (min-width: 46em) {
     .pie > path {
       fill: yellow; } }
 
@@ -1372,8 +1188,8 @@ body > svg:first-of-type {
 /* Literal.Number.Integer.Long */
 .midday {
   background: #87e0fd;
-  background: -webkit-linear-gradient(top, #33ACE0 0%, #87e0fd 100%);
-  background: linear-gradient(to bottom, #33ACE0 0%, #87e0fd 100%);
+  background: -webkit-linear-gradient(top, #33ACE0, #87e0fd);
+  background: linear-gradient(to bottom, #33ACE0, #87e0fd);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33ACE0', endColorstr='#87e0fd',GradientType=0 ); }
 
 .late-day {
@@ -1421,7 +1237,7 @@ body > svg:first-of-type {
   left: 0;
   overflow: hidden;
   z-index: -1; }
-  @media (min-width: 75em) {
+  @media all and (min-width: 75em) {
     .waves {
       width: 100%; } }
 
