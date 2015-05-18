@@ -12,9 +12,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
     <link rel="shortcut icon" type="image/x-icon" href="{{ site.url }}/favicon.ico"  />
     <link rel="icon" type="image/x-icon" href="{{ site.url }}/favicon.ico" />
-
+   
     <!--facebook tags-->
-    <meta property="fb:admins" content="@thebeckyhamm"/>
+    <meta property="fb:admins" content="@thebeckyhamm"/>           
     <meta property="og:title" content="MetricSlice"/>
     <meta property="og:type" content="website"/>
     <meta property="og:url" content="http://metricslice.com/"/>
@@ -23,17 +23,17 @@
     <meta property="og:description"
     content="Simplifying your slice of the web with development and design for websites and applications."/>
 
-
+ 
 
     <title>{{ page.title }}</title>
     <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>    
-    <link rel="stylesheet" type="text/css" href="{{ site.url }}/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="{{ site.url }}/css/style.css" />  
   
 
     <!-- GA -->
-    <script type="text/javascript">
+    <script type="text/javascript">    
         var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', 'UA-28662803-1']);
+        _gaq.push(['_setAccount', 'UA-28662803-1']);   
         _gaq.push(['_trackPageview']);
 
         (function() {
@@ -42,22 +42,22 @@
             var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
         })();
     </script>
-    <script src="../scripts/modernizr.min.js"></script>
+    <script src="{{ site.url }}/scripts/modernizr.min.js"></script>
 
 
 </head>
 
 <body class="late-day">
     {% include symbol/svg/sprite.symbol.svg %}
-
-    <a href="#" class="menu-link">Menu</a>
+    <section class="main-wrapper">
+    <a href="#" class="menu-link">Menu</a> 
 
     <aside class="aside">
         <header class="header">
         {% include header.html %}
         <nav class="nav">
             <ul class="main-menu">
-                <li><a href="{{ site.url }}/index.html">Home</a></li>
+                <li><a href="{{ site.url }}/index.html">Home</a></li> 
                 <li><a href="{{ site.url }}/services">Services</a></li>
                 <li><a href="{{ site.url }}/portfolio">Portfolio</a></li>
                 <li><a href="{{ site.url }}/blog">Blog</a></li>
@@ -89,7 +89,11 @@
 
         </div>
     </div>
-    {% include wave.html %}
+    </section>
+    <div class="wave-svg-wrapper">
+        {% include wave.html %}
+        
+    </div>
 
 
     
@@ -105,28 +109,6 @@
      <script type="text/javascript" src="{{ site.url }}/scripts/respond.min.js"></script>
      <script type="text/javascript" src="{{ site.url }}/scripts/html5shiv.js"></script>
      <![endif]-->
-     <script>
-$(document).ready(function() {
-        $('body').addClass('js');
-            var $menulink = $('.menu-link'),
-            $aside = $('.aside'),
-            $menuExit = $('.menu-exit');
-        
-        $menulink.click(function(e) {
-            e.preventDefault();
-            $menulink.toggleClass('active');
-            $aside.toggleClass('active');
-        });
 
-        $menuExit.click(function(e) {
-            e.preventDefault();
-            $menulink.toggleClass('active');
-            $aside.toggleClass('active');
-        });
-        
-});
-
-
-</script>
 </body>
 </html>

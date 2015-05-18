@@ -2,4 +2,3 @@ name: MetricSlice LLC
 permalink: '/blog/:year/:month/:day/:title/'
 markdown: redcarpet
 highlighter: pygments
-

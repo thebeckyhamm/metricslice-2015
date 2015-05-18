@@ -6,8 +6,12 @@ html, body {
 body {
 	background-repeat: no-repeat;
 	background-size: cover;
-	overflow-x: hidden;
 	position: relative;
+
+}
+
+.main-wrapper {
+	overflow-x: hidden;
 	@include bp($mama-bear) {
 		display: flex;
 		flex-wrap: wrap;
@@ -18,22 +22,22 @@ body {
 .aside {
 	background-color: rgba($yellow, .9);
 	color: $blue;
-	left: -100%;
 	min-height: 100vh;
 	position: absolute;
 	top: 0;
-	transition: left .2s ease-in-out;
+	transform: translate3d(-100%, 0, 0);
+	transition: transform .2s ease-in-out;
 	width: 100%;
 	z-index: 1;
 	@include bp($mama-bear) {
 		background-color: rgba(0, 0, 0, .4);
 		flex: 0 0 285px;
-		left: 0;
+		transform: translate3d(0, 0, 0);
 		position: relative;
 		width: auto;
 	}
 	&.active {
-		left: 0;
+		transform: translate3d(0, 0, 0);
 	}
 }
 
@@ -44,6 +48,15 @@ body {
 		min-height: 100vh;
 		flex: 2 0 0%;
 	}
+}
+
+.wave-svg-wrapper {
+	bottom: 0;
+	left: 0;
+	overflow: hidden;
+	position: absolute;
+	width: 100%;
+	z-index: -1;
 }
 
 

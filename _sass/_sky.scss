@@ -36,6 +36,19 @@
     }
 }
 
+.dawn {
+    background: #7598B5;
+    background: linear-gradient(to bottom, #7598B5 0%, #9B9893 40%, #FCECA7 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7598B5', endColorstr='#FCECA7',GradientType=0 );
+    color: white;
+    .menu-link {
+        color: white;
+    }
+    .headline > * {
+        color: white;
+    }
+}
+
 .night {
     background: #0D1A26;
     background: linear-gradient(to bottom, #0D1A26 0%, #1A2C42 100%);
@@ -50,11 +63,8 @@
 }
 
 .waves {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    overflow: hidden;
-    z-index: -1;
+    position: relative;
+    bottom: -5px;
     @include bp($grandpa-bear) {
         width: 100%;  
     }
@@ -70,10 +80,9 @@
   //left: 5%;
   width: 100px;
   position: absolute;
-  bottom: 0;
   //transition: left 1s ease-in, bottom 1s ease-in;
   z-index: -2;
-  animation: sunshine 5s infinite;
+  //animation: sunshine 5s infinite;
 }
 
 .star {
