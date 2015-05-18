@@ -33,17 +33,11 @@
         max-width: 400px;
         float: left;
     }
-    @include bp($papa-bear) {
-        max-width: 50%;
-    }
+
 }
 
 .portfolio-description {
     width: 100%;
-    @include bp($grandpa-bear) {
-        float: right;
-        width: 50%;
-    }
 }
 
 

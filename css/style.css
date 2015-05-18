@@ -891,16 +891,9 @@ img {
     .portfolio-img {
       max-width: 400px;
       float: left; } }
-  @media all and (min-width: 60em) {
-    .portfolio-img {
-      max-width: 50%; } }
 
 .portfolio-description {
   width: 100%; }
-  @media all and (min-width: 75em) {
-    .portfolio-description {
-      float: right;
-      width: 50%; } }
 
 .footer {
   color: #006BDF;
