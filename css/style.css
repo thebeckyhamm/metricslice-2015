@@ -947,6 +947,12 @@ body > svg:first-of-type {
     .pie > path {
       fill: yellow; } }
 
+.me {
+  float: left;
+  height: 200px;
+  padding: 0 1em 1em 0;
+  width: 200px; }
+
 .highlight {
   background: #F4F4F4; }
 
