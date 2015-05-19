@@ -1254,8 +1254,16 @@ body > svg:first-of-type {
   color: white; }
   .night .menu-link {
     color: white; }
+    .night .menu-link:before {
+      background: white;
+      box-shadow: 0 0.25em 0 0 white, 0 0.5em 0 0 white; }
   .night .headline > * {
     color: white; }
+  .night .content a {
+    background-color: #006BDF;
+    color: white; }
+  .night code {
+    color: #33302a; }
 
 .waves {
   position: relative;

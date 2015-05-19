@@ -56,9 +56,22 @@
     color: white;
     .menu-link {
         color: white;
+        &:before {
+            background: white;
+            box-shadow: 
+            0 0.25em 0 0 white,
+            0 0.5em 0 0 white;
+        }
     }
     .headline > * {
         color: white;
+    }
+    .content a {
+        background-color: $blue;
+        color: white;
+    }
+    code {
+        color: $sec-dark;
     }
 }
 
