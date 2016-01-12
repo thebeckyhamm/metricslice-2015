@@ -889,7 +889,6 @@ img {
   width: 100%; }
   @media all and (min-width: 40em) {
     .portfolio-img {
-      max-width: 400px;
       float: left; } }
 
 .portfolio-description {
@@ -1239,6 +1238,9 @@ body > svg:first-of-type {
   .dusk .menu-link {
     color: white; }
   .dusk .headline > * {
+    color: white; }
+  .dusk .content a {
+    background-color: #006BDF;
     color: white; }
 
 .dawn {

@@ -3,3 +3,6 @@ node_modules
 .DS_Store
 .htaccess.txt
 .sass-cache
+_drafts
+_assets
+images

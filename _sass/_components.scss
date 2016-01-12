@@ -30,7 +30,6 @@
 .portfolio-img {
     width: 100%;
     @include bp($kid-bear) {
-        max-width: 400px;
         float: left;
     }
 

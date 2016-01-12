@@ -142,6 +142,13 @@ $(function() {
 setInterval(sunPosition, 60000);
 
 
+var today = new Date();
+var year = today.getFullYear();
+var el = document.querySelector(".js-year");
+el.innerHTML = el.innerHTML + year;
+
+
+
 
 
 
