@@ -1,8 +1,5 @@
 
 .footer {
-    color: $blue;
+    color: $white;
 	padding: 1em;
-    @include bp($mama-bear) {
-        color: $white;
-    }
 }

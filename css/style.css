@@ -854,11 +854,8 @@ img {
   width: 100%; }
 
 .footer {
-  color: #006BDF;
+  color: #fff;
   padding: 1em; }
-  @media all and (min-width: 46em) {
-    .footer {
-      color: #fff; } }
 
 body > svg:first-of-type {
   display: none; }
@@ -1235,9 +1232,6 @@ body > svg:first-of-type {
 .waves {
   position: relative;
   bottom: -5px; }
-  @media all and (min-width: 75em) {
-    .waves {
-      width: 100%; } }
 
 .sun {
   background-color: yellow;
