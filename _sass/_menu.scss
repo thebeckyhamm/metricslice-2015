@@ -1,55 +1,39 @@
 .menu-link {
-    color: $sec-dark;
-    cursor: pointer;
-    display: inline-block;
-    font-family: $comp-font;
-    font-size: 1.2em;
-    letter-spacing: -1px;
-    padding: .5em .5em .5em 1.5em;
-    position: relative;
-    text-transform: uppercase;
-    &:before {
-        content: "";
-        position: absolute;
-        left: 0.5em;
-        top: .8em;
-        width: .75em;
-        height: 0.12em;
-        background: $sec-dark;
-        box-shadow: 
-        0 0.25em 0 0 $sec-dark,
-        0 0.5em 0 0 $sec-dark;
-    }
-    &:hover {
-        color: $blue;
-    }
-    @include bp($mama-bear) {
-        display: none;
-    }
+  color: $sec-dark;
+  cursor: pointer;
+  display: inline-block;
+  font-family: $comp-font;
+  font-size: 1.2em;
+  letter-spacing: -1px;
+  padding: 0.5em 0.5em 0.5em 1.5em;
+  position: relative;
+  text-transform: uppercase;
+  &:before {
+    content: "";
+    position: absolute;
+    left: 0.5em;
+    top: 0.8em;
+    width: 0.75em;
+    height: 0.12em;
+    background: $sec-dark;
+    box-shadow: 0 0.25em 0 0 $sec-dark, 0 0.5em 0 0 $sec-dark;
+  }
+  &:hover {
+    color: $blue;
+  }
+  @include bp($mama-bear) {
+    display: none;
+  }
 }
 
 .nav {
-    padding: 1em;
-}
-.main-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  padding: 1rem;
+  &__item {
+    padding: 0.5rem 1rem;
     margin: 0;
-    a {
-        color: $blue;
-        border-bottom: 1px solid darken($yellow, 5%);
-        display: inline-block;
-        font-family: $comp-font;
-        font-size: 1.5em;
-        padding: .25em;
-        text-transform: uppercase;
-        width: 100%;
-        @include bp($mama-bear) {
-            color: $white;
-            border-bottom: rgba(0, 0, 0, .5);
-            font-family: $base-font;
-            font-size: 1em;
-            letter-spacing: 1px;
-            padding: 0;
-            text-transform: capitalize;
-        }
-    }
+  }
 }

@@ -1,79 +1,55 @@
 body > svg:first-of-type {
-	display: none;
+  display: none;
 }
 
 .aside-icons {
-	padding: 1em;
-	a {
-		display: inline-block;
-		margin: .25em;
-		&:first-child {
-			margin-left: 0;
-		}
-	}
+  padding: 1em;
+  a {
+    display: inline-block;
+    margin: 0.25em;
+    &:first-child {
+      margin-left: 0;
+    }
+  }
 }
 
 .icon {
-	border: 2px solid $blue;
-	border-radius: 50%;
-	height: 40px;
-	padding: .25em;
-	width: 40px;
-	transition: background-color .2s ease-in;
-	@include bp($mama-bear) {
-		border: 1px solid $white;
-		height: 35px;
-		width: 35px;
-		&:hover {
-			//border-color: $blue;
-			background-color: $blue;
-		}
-	}
-
+  border: 2px solid $blue;
+  border-radius: 50%;
+  height: 40px;
+  padding: 0.25em;
+  width: 40px;
+  transition: background-color 0.2s ease-in;
+  @include bp($mama-bear) {
+    border: 1px solid $white;
+    height: 35px;
+    width: 35px;
+    &:hover {
+      //border-color: $blue;
+      background-color: $blue;
+    }
+  }
 }
 
-
-
-#phone g, #email path, #github path, #twitter path, #codepen path {
-	fill: $blue;
-	@include bp($mama-bear) {
-		fill: $white;
-	}
+#phone g,
+#email path,
+#github path,
+#twitter path,
+#codepen path {
+  fill: $blue;
+  @include bp($mama-bear) {
+    fill: $white;
+  }
 }
-
 
 .metricslice > path {
-
-	fill: $blue;
-	@include bp($mama-bear) {
-		fill: $white;
-	}
-
+  fill: $white;
 }
 
 .pie > path {
-
-	fill: $blue;
-	@include bp($mama-bear) {
-		fill: $yellow;
-	}
-
+  fill: $white;
 }
 
-.waves #middle {
-	//animation: wave1 5s infinite;
+.logo svg {
+  max-width: 200px;
 }
-
-.waves #back {
-	//animation: wave2 5s infinite;
-}
-
-
-.me {
-	float: left;
-	height: 200px;
-	padding: 0 1em 1em 0;
-	width: 200px;
-}
-
-

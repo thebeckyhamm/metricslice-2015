@@ -1,5 +1,6 @@
 <!DOCTYPE HTML>
 <html>
+
 <head>
     <meta charset="UTF-8">
 
@@ -10,33 +11,33 @@
     <meta name="robots" content="all" />
     <meta name="author" content="Becky Hamm, MetricSlice LLC" />
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
-    <link rel="shortcut icon" type="image/x-icon" href="{{ site.url }}/favicon.ico"  />
+    <link rel="shortcut icon" type="image/x-icon" href="{{ site.url }}/favicon.ico" />
     <link rel="icon" type="image/x-icon" href="{{ site.url }}/favicon.ico" />
-   
-    <!--facebook tags-->
-    <meta property="fb:admins" content="@thebeckyhamm"/>           
-    <meta property="og:title" content="MetricSlice"/>
-    <meta property="og:type" content="website"/>
-    <meta property="og:url" content="http://metricslice.com/"/>
-    <meta property="og:image" content="http://metricslice.com/images/fb-icon.png"/>
-    <meta property="og:site_name" content="MetricSlice"/>
-    <meta property="og:description"
-    content="Simplifying your slice of the web with development and UX for websites and applications."/>
 
- 
+    <!--facebook tags-->
+    <meta property="fb:admins" content="@thebeckyhamm" />
+    <meta property="og:title" content="MetricSlice" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://metricslice.com/" />
+    <meta property="og:image" content="http://metricslice.com/images/fb-icon.png" />
+    <meta property="og:site_name" content="MetricSlice" />
+    <meta property="og:description" content="Simplifying your slice of the web with development and UX for websites and applications."
+    />
+
+
 
     <title>{{ page.title }}</title>
     <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="{{ site.url }}/css/style.css" />  
-  
+    <link rel="stylesheet" type="text/css" href="{{ site.url }}/css/style.css" />
+
 
     <!-- GA -->
     <script type="text/javascript">    
         var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', 'UA-28662803-1']);   
+        _gaq.push(['_setAccount', 'UA-28662803-1']);
         _gaq.push(['_trackPageview']);
 
-        (function() {
+        (function () {
             var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
             ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
             var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
@@ -47,65 +48,63 @@
 
 </head>
 
-<body class="late-day">
+<body class="flex">
     {% include symbol/svg/sprite.symbol.svg %}
-    <section class="main-wrapper">
-    <a href="#" class="menu-link">Menu</a> 
-
-    <aside class="aside">
+    <section class="flex__grow--1">
         <header class="header">
-        {% include header.html %}
-        <nav class="nav">
-            <ul class="main-menu">
-                <li><a href="{{ site.url }}/">Home</a></li> 
-                <li><a href="{{ site.url }}/skills">Skills</a></li>
-                <li><a href="{{ site.url }}/portfolio">Portfolio</a></li>
-                <li><a href="{{ site.url }}/blog">Blog</a></li>
-                <li><a href="{{ site.url }}/about">About</a></li>
-            </ul>
-        </nav> 
-   
+            {% include header.html %}
+
         </header>
-        <div class="aside-icons">
-            <a href="tel:404-694-1204"><svg class="icon"><use xlink:href="#phone" /></svg></a>
-            <a href="mailto:info@metricslice.com"><svg class="icon"><use xlink:href="#email" /></svg></a>
-            <a href="http://twitter.com/thebeckyhamm"><svg class="icon"><use xlink:href="#twitter" /></svg></a>
-            <a href="http://codepen.io/thebeckyhamm"><svg class="icon"><use xlink:href="#codepen" /></svg></a>
-            <a href="http://github.com/thebeckyhamm"><svg class="icon"><use xlink:href="#github" /></svg></a>
+        <nav>
+            <ul class="nav">
+                <li class="nav__item">
+                    <a href="{{ site.url }}/">Home</a>
+                </li>
+                <li class="nav__item">
+                    <a href="{{ site.url }}/portfolio">Portfolio</a>
+                </li>
+                <li class="nav__item">
+                    <a href="{{ site.url }}/blog">Blog</a>
+                </li>
+                <li class="nav__item">
+                    <a href="{{ site.url }}/about">About</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="wrapper">
+            <div class="content">
+
+                {{ content }}
+
+            </div>
         </div>
-
-        {% include footer.html %}
-
-    </aside>
-
-    <div class="wrapper ">
-        <div class="sun"></div>
-        <div class="content">
-            
-        {{ content }}
-
-        </div>
-    </div>
     </section>
     <div class="wave-svg-wrapper">
         {% include wave.html %}
-        
+
+    </div>
+    <div>
+                {% include footer.html %}
+            
     </div>
 
 
-    
-
-        
 
 
 
 
 
 
-     <!--[if gte IE 8]>     
+
+
+
+
+    <!--[if gte IE 8]>     
      <script type="text/javascript" src="{{ site.url }}/scripts/respond.min.js"></script>
      <script type="text/javascript" src="{{ site.url }}/scripts/html5shiv.js"></script>
      <![endif]-->
 
 </body>
+
 </html>

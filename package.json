@@ -9,7 +9,14 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "vinyl": "~0.4.6",
-    "gulp-svg-sprite": "~1.1.2"
+    "browser-sync": "^2.24.5",
+    "child_process": "^1.0.2",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-svg-sprite": "~1.1.2",
+    "vinyl": "~0.4.6"
+  },
+  "dependencies": {
+    "gulp": "^3.9.1"
   }
 }
