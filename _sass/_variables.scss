@@ -12,13 +12,16 @@
 	$blue: #006BDF;
 	$magenta: #A10088;
 	$light-gray: #a4a4a4;
-	$lightest-gray: #F4F4F4;
+    $lightest-gray: #F4F4F4;
+    $green: #042a3d;
+    $tan: #dab679;
+
 
 	$padding: 1em;
 
-	$heading-font: 'AleoLight', 'Helvetica Neue', Helvetica, sans-serif;
-	$base-font: 'AleoLight', 'Helvetica Neue', Helvetica, sans-serif;
-	$comp-font: 'Lato', sans-serif;
+	$heading-font: 'PT Serif', Helvetica, sans-serif;
+	$base-font: 'PT Sans', 'Helvetica Neue', Helvetica, sans-serif;
+	$comp-font: monospace;
 
 
 	@mixin transition($items) {

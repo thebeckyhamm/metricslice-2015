@@ -1,17 +1,6 @@
-@font-face {
-  font-family: "AleoLight";
-  src: url("../fonts/aleo-light-webfont.eot"); /* IE9 Compat Modes */
-  src: url("../fonts/aleo-light-webfont.eot?#iefix") format("embedded-opentype"),
-    /* IE6-IE8 */ url("../fonts/aleo-light-webfont.woff2") format("woff2"),
-    /* Super Modern Browsers */ url("../fonts/aleo-light-webfont.woff")
-      format("woff"),
-    /* Pretty Modern Browsers */ url("../fonts/aleo-light-webfont.ttf")
-      format("truetype"),
-    /* Safari, Android, iOS */ url("../fonts/aleo-light-webfont.svg#svgaleo")
-      format("svg"); /* Legacy iOS */
-}
 
 html {
+    color: $white;
   font-size: 1.2em;
   font-family: $base-font;
   font-weight: 300;
@@ -22,7 +11,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: $heading-font;
+  font-family: $heading-font; 
   font-weight: 300;
   line-height: 100%;
   margin: 0 0 0.3em 0;
@@ -64,7 +53,6 @@ h3,
 
 h4,
 .h4 {
-  font-family: $comp-font;
   font-size: 1.4em * 0.9;
   line-height: 120%;
   @include bp($mama-bear) {
@@ -90,6 +78,10 @@ h1.inline {
   margin-top: 1em;
 }
 
+.serif {
+    font-family: $heading-font;
+}
+
 p,
 li {
   line-height: 140%;
@@ -100,7 +92,7 @@ li {
 }
 
 a {
-  color: $blue;
+  color: $tan;
 }
 
 .footer a {
@@ -191,6 +183,7 @@ hr {
 .month,
 .day,
 .year {
+    font-family: $heading-font;
   line-height: 1;
   margin: 0;
 }

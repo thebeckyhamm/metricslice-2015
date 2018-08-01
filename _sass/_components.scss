@@ -1,5 +1,5 @@
 .headline {
- 	color: $sec-dark;
+ 	color: $white;
  	display: inline-block;
  	font-size: 1.2em;
  	letter-spacing: -1px;
@@ -13,6 +13,7 @@
     }
     @include bp($mama-bear) {
         margin-top: 3vh;
+        margin-bottom: 20vh;
     }
 
  }
@@ -37,6 +38,16 @@
 
 .portfolio-description {
     width: 100%;
+}
+
+.redesign {
+    background-color: $white;
+    color: $black;
+    font-family: monospace;
+    font-size: .9rem;
+    padding: .5rem 1rem;
+    text-align: center;
+
 }
 
 

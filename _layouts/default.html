@@ -27,7 +27,7 @@
 
 
     <title>{{ page.title }}</title>
-    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans|PT+Serif" rel="stylesheet">    
     <link rel="stylesheet" type="text/css" href="{{ site.url }}/css/style.css" />
 
 
@@ -51,6 +51,9 @@
 <body class="flex">
     {% include symbol/svg/sprite.symbol.svg %}
     <section class="flex__grow--1">
+        <div class="redesign">
+            Note: I am in mid-redesign. Everything is broken. Don't judge too harshly.
+        </div>
         <header class="header">
             {% include header.html %}
 
@@ -80,10 +83,6 @@
             </div>
         </div>
     </section>
-    <div class="wave-svg-wrapper">
-        {% include wave.html %}
-
-    </div>
     <div>
                 {% include footer.html %}
             

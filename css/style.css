@@ -479,16 +479,10 @@ th {
 .border {
   border: 1px solid #a4a4a4; }
 
-@font-face {
-  font-family: "AleoLight";
-  src: url("../fonts/aleo-light-webfont.eot");
-  /* IE9 Compat Modes */
-  src: url("../fonts/aleo-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/aleo-light-webfont.woff2") format("woff2"), url("../fonts/aleo-light-webfont.woff") format("woff"), url("../fonts/aleo-light-webfont.ttf") format("truetype"), url("../fonts/aleo-light-webfont.svg#svgaleo") format("svg");
-  /* Legacy iOS */ }
-
 html {
+  color: #fff;
   font-size: 1.2em;
-  font-family: "AleoLight", "Helvetica Neue", Helvetica, sans-serif;
+  font-family: "PT Sans", "Helvetica Neue", Helvetica, sans-serif;
   font-weight: 300;
   word-spacing: 0.05em; }
 
@@ -496,7 +490,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: "AleoLight", "Helvetica Neue", Helvetica, sans-serif;
+  font-family: "PT Serif", Helvetica, sans-serif;
   font-weight: 300;
   line-height: 100%;
   margin: 0 0 0.3em 0; }
@@ -540,7 +534,6 @@ h3,
 
 h4,
 .h4 {
-  font-family: "Lato", sans-serif;
   font-size: 1.26em;
   line-height: 120%; }
   @media all and (min-width: 46em) {
@@ -563,6 +556,9 @@ h1.inline {
 .post h4 {
   margin-top: 1em; }
 
+.serif {
+  font-family: "PT Serif", Helvetica, sans-serif; }
+
 p,
 li {
   line-height: 140%;
@@ -573,7 +569,7 @@ li {
       line-height: 150%; } }
 
 a {
-  color: #006BDF; }
+  color: #dab679; }
 
 .footer a {
   border: none;
@@ -650,6 +646,7 @@ hr {
 .month,
 .day,
 .year {
+  font-family: "PT Serif", Helvetica, sans-serif;
   line-height: 1;
   margin: 0; }
 
@@ -712,7 +709,7 @@ hr {
   color: #33302a;
   cursor: pointer;
   display: inline-block;
-  font-family: "Lato", sans-serif;
+  font-family: monospace;
   font-size: 1.2em;
   letter-spacing: -1px;
   padding: 0.5em 0.5em 0.5em 1.5em;
@@ -744,7 +741,8 @@ hr {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 0;
-  padding: 1rem; }
+  padding: 1rem;
+  text-transform: uppercase; }
   .nav__item {
     padding: 0.5rem 1rem;
     margin: 0; }
@@ -755,6 +753,7 @@ body {
   min-height: 100vh; }
 
 body {
+  background-color: #042a3d;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative; }
@@ -764,7 +763,6 @@ body {
   position: relative; }
 
 .header {
-  background-color: #222;
   padding: 1rem;
   text-align: center; }
 
@@ -813,7 +811,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #0071BC;
+  background-color: #dab679;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -821,7 +819,7 @@ img {
       flex-wrap: wrap; }
 
 .headline {
-  color: #33302a;
+  color: #fff;
   display: inline-block;
   font-size: 1.2em;
   letter-spacing: -1px;
@@ -834,10 +832,11 @@ img {
     margin: 0 auto .3em auto; }
   @media all and (min-width: 46em) {
     .headline {
-      margin-top: 3vh; } }
+      margin-top: 3vh;
+      margin-bottom: 20vh; } }
 
 .btn-cluster {
-  font-family: "Lato", sans-serif;
+  font-family: monospace;
   margin: 1em auto;
   text-align: center; }
   .btn-cluster .btn {
@@ -853,9 +852,17 @@ img {
 .portfolio-description {
   width: 100%; }
 
+.redesign {
+  background-color: #fff;
+  color: #222;
+  font-family: monospace;
+  font-size: .9rem;
+  padding: .5rem 1rem;
+  text-align: center; }
+
 .footer {
   color: #fff;
-  padding: 1em; }
+  padding: 0 1rem; }
 
 body > svg:first-of-type {
   display: none; }
@@ -906,6 +913,11 @@ body > svg:first-of-type {
 
 .logo svg {
   max-width: 200px; }
+
+.logo {
+  color: #fff;
+  font-size: 2rem;
+  text-decoration: none; }
 
 .highlight {
   background: #F4F4F4; }
