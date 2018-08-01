@@ -1,0 +1,387 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <!--meta and favicon tags-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="robots" content="all" />
+    <meta name="author" content="Becky Hamm, MetricSlice LLC" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+
+    <!--facebook tags-->
+    <meta property="fb:admins" content="@thebeckyhamm" />
+    <meta property="og:title" content="MetricSlice" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://metricslice.com/" />
+    <meta property="og:image" content="http://metricslice.com/images/fb-icon.png" />
+    <meta property="og:site_name" content="MetricSlice" />
+    <meta property="og:description" content="Simplifying your slice of the web with development and UX for websites and applications."
+    />
+
+
+
+    <title>Blog | MetricSlice Front-End Development and Web Design</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans|PT+Serif" rel="stylesheet">    
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+
+
+    <!-- GA -->
+    <script type="text/javascript">    
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-28662803-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+    <script src="/scripts/modernizr.min.js"></script>
+
+
+</head>
+
+<body class="flex">
+    <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol viewBox="-5 -5 40 40" id="codepen"><title>Codepen</title><desc>Link to codepen</desc><path d="M29.98 10.205l-.023-.107-.02-.063-.034-.094c-.01-.02-.02-.04-.028-.062-.014-.03-.028-.058-.045-.086-.01-.02-.023-.04-.036-.06-.018-.026-.035-.053-.055-.078l-.045-.056c-.02-.024-.042-.047-.064-.07-.016-.017-.032-.034-.05-.05l-.073-.062c-.02-.015-.038-.03-.06-.044l-.02-.017L15.715.215c-.433-.287-.997-.287-1.43 0L.575 9.356l-.022.018-.06.044c-.023.02-.048.04-.072.062l-.05.048c-.022.023-.044.046-.064.07-.015.02-.03.036-.044.056-.02.026-.037.052-.055.078l-.037.06c-.016.028-.03.057-.044.086l-.03.063-.032.095-.02.063c-.01.035-.016.07-.022.107-.003.02-.008.037-.01.056-.008.056-.012.113-.012.17v9.14c0 .058.004.113.01.17l.012.055c.006.036.013.072.022.108l.02.063c.01.03.02.063.033.095l.03.063c.013.03.027.058.043.087.01.02.024.04.037.06.018.026.035.052.055.078.014.02.03.037.044.055.02.024.042.048.064.07l.05.05.074.062.06.045.02.016 13.71 9.14c.218.142.467.214.716.214s.5-.072.715-.217l13.71-9.14c.01-.006.016-.012.022-.017l.06-.045c.024-.02.05-.04.072-.06l.05-.05.064-.07.044-.056c.02-.026.037-.052.055-.08.013-.02.025-.038.036-.058l.044-.087c.01-.022.02-.042.028-.063.013-.03.023-.063.033-.095.007-.02.015-.04.02-.063.01-.037.017-.073.023-.11.003-.018.008-.035.01-.055.008-.052.012-.108.012-.165v-9.14c0-.057-.004-.113-.012-.17-.002-.018-.007-.036-.01-.055zM15 18.05L10.44 15 15 11.95 19.56 15 15 18.05zm-1.29-8.34l-5.588 3.74L3.61 10.43l10.1-6.734V9.71zM5.804 15l-3.225 2.157v-4.314L5.803 15zm2.32 1.55l5.588 3.74V26.3l-10.1-6.734 4.512-3.017zm8.166 3.74l5.588-3.74 4.512 3.02-10.1 6.732V20.29zM24.195 15l3.226-2.157v4.314L24.196 15zm-2.318-1.55l-5.59-3.74V3.698L26.39 10.43l-4.512 3.02z"/></symbol><symbol viewBox="-5 -5 42 42" id="email"><title>Email me</title><desc>Email me at info@metricslice.com</desc><path d="M0 4v24h32V4H0zm16 12.684L3.536 6h24.93L16 16.683zm0 2.632l3.9-3.342 8.77 10.023H3.327l8.77-10.023 3.898 3.342H16zm14 5.166l-8.582-9.81L30 7.315v17.166zm-19.418-9.81L2 24.482V7.318l8.582 7.354z"/></symbol><symbol viewBox="-5 -5 42 42" id="github"><title>GitHub</title><desc>Link to my GitHub repository</desc><path clip-rule="evenodd" d="M16.003 0C7.17 0 .008 7.162.008 15.997c0 7.067 4.582 13.063 10.94 15.18.8.145 1.052-.33 1.052-.753 0-.38.008-1.442 0-2.777-4.45.967-5.37-2.107-5.37-2.107-.728-1.848-1.776-2.34-1.776-2.34-1.452-.992.11-.973.11-.973 1.604.113 2.45 1.65 2.45 1.65 1.427 2.442 3.743 1.736 4.654 1.328.146-1.034.56-1.74 1.017-2.14C9.533 22.663 5.8 21.29 5.8 15.16c0-1.747.622-3.174 1.645-4.292-.165-.404-.715-2.03.157-4.234 0 0 1.343-.43 4.398 1.64 1.276-.354 2.645-.53 4.005-.537 1.36.006 2.727.183 4.005.538 3.055-2.07 4.396-1.64 4.396-1.64.872 2.202.323 3.83.16 4.233 1.022 1.118 1.643 2.545 1.643 4.292 0 6.146-3.74 7.498-7.305 7.893C19.48 23.548 20 24.508 20 26v4.428c0 .428.258.9 1.07.746C27.422 29.054 32 23.062 32 15.997 32 7.162 24.838 0 16.003 0z" fill="#181616" fill-rule="evenodd"/></symbol><symbol viewBox="-5 -5 28 28" id="phone"><title>Call me</title><desc>Call me at 404-694-1204</desc><g fill="none" fill-rule="evenodd"><g fill="#000" transform="translate(-85 -126)"><g transform="translate(85 126)"><path d="M3.6 7.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V17c0 .6-.4 1-1 1C7.6 18 0 10.4 0 1c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1L3.6 7.8z"/></g></g></g></symbol><symbol viewBox="-5 -5 66.69 66.69" id="twitter"><title>Follow me on Twitter</title><desc>Follow me on Twitter @thebeckyhamm</desc><path d="M52.837 15.065c-1.81.805-3.76 1.348-5.805 1.59 2.088-1.25 3.69-3.23 4.444-5.59-1.953 1.158-4.115 2-6.418 2.453-1.843-1.964-4.47-3.192-7.377-3.192-5.58 0-10.105 4.525-10.105 10.107 0 .79.09 1.562.262 2.303-8.4-.422-15.848-4.445-20.833-10.56-.87 1.492-1.368 3.228-1.368 5.082 0 3.506 1.784 6.6 4.496 8.412-1.656-.053-3.215-.508-4.578-1.265v.128c0 4.896 3.483 8.98 8.107 9.91-.847.23-1.74.354-2.662.354-.652 0-1.285-.063-1.902-.182 1.287 4.015 5.02 6.938 9.44 7.02-3.458 2.71-7.815 4.326-12.55 4.326-.816 0-1.62-.047-2.412-.14 4.474 2.868 9.786 4.54 15.493 4.54 18.59 0 28.756-15.4 28.756-28.756 0-.438-.01-.875-.028-1.31 1.974-1.42 3.688-3.202 5.042-5.23z"/></symbol></svg>
+    <section class="flex__grow--1">
+        <div class="redesign">
+            Note: I am in mid-redesign. Everything is broken. Don't judge too harshly.
+        </div>
+        <header class="header">
+            <a href="/" class="logo serif">(the) Becky Hamm</a>
+<!-- <a href="/" class="logo">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" id="Layer_1" x="0px" y="0px"
+        viewBox="0 0 411 72" enable-background="new 0 0 411 72" xml:space="preserve">
+        <g class="pie">
+            <path fill="#222" stroke="" stroke-width="0.41" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d=" M9.4 17.1L88.1 6c0 0-18.9 29.5-27.9 39.7C29.9 40.9 9.4 17.1 9.4 17.1z"
+            />
+            <path fill="#222" stroke="" stroke-width="0.41" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d=" M59 49.4C28.7 44.5 8.2 20.8 8.2 20.8V38c0 0 20.5 23.8 50.8 28.7V49.4z"
+            />
+            <path fill="#222" stroke="" stroke-width="0.41" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d=" M90.2 9.9c0 0-18.9 29.5-27.9 39.7v12.7c9-10.2 27.9-39.7 27.9-39.7V9.9z"
+            />
+        </g>
+        <g class="metricslice">
+            <path d="M147.1 54.9V18.1l-16.8 28.7h-1.9l-16.8-28.7v36.8h-3.1V12.3h3.1l17.8 30.5l17.8-30.5h3.1v42.6H147.1z" />
+            <path d="M173.7 55.5c-2.2 0-4.2-0.4-6.1-1.3c-1.9-0.9-3.5-2-4.9-3.5c-1.4-1.5-2.5-3.2-3.2-5.2 c-0.8-2-1.2-4.1-1.2-6.3c0-2.2 0.4-4.3 1.2-6.2c0.8-1.9 1.8-3.6 3.2-5.1c1.4-1.5 3-2.6 4.9-3.5c1.9-0.8 3.9-1.3 6.1-1.3 c2.2 0 4.2 0.4 6.1 1.3c1.9 0.9 3.5 2 4.8 3.5c1.4 1.5 2.4 3.2 3.2 5.1c0.8 1.9 1.2 4 1.2 6.1c0 0.2 0 0.5 0 0.8c0 0.3 0 0.5 0 0.6 h-27.4c0.1 1.8 0.5 3.5 1.3 5c0.7 1.5 1.6 2.9 2.7 4c1.1 1.1 2.4 2 3.8 2.6c1.4 0.6 3 1 4.6 1c1.1 0 2.1-0.2 3.2-0.4 c1.1-0.3 2-0.7 2.9-1.2c0.9-0.5 1.7-1.1 2.4-1.9c0.7-0.7 1.2-1.5 1.7-2.4l2.6 0.7c-0.5 1.1-1.2 2.2-2 3.1c-0.9 0.9-1.9 1.8-3 2.4 c-1.1 0.7-2.4 1.2-3.8 1.6C176.5 55.3 175.1 55.5 173.7 55.5z M185.9 38.1c-0.1-1.8-0.5-3.5-1.2-5c-0.7-1.5-1.6-2.8-2.7-3.9 c-1.1-1.1-2.4-2-3.8-2.6c-1.4-0.6-3-0.9-4.6-0.9c-1.6 0-3.2 0.3-4.6 0.9c-1.4 0.6-2.7 1.5-3.8 2.6c-1.1 1.1-2 2.4-2.6 4 c-0.7 1.5-1 3.2-1.2 5H185.9z"
+            />
+            <path d="M209.2 53.4c-0.2 0.1-0.4 0.2-0.8 0.4c-0.4 0.2-0.9 0.4-1.4 0.6c-0.6 0.2-1.2 0.4-2 0.5 c-0.7 0.2-1.5 0.2-2.3 0.2s-1.6-0.1-2.4-0.4c-0.7-0.2-1.4-0.6-2-1.1c-0.6-0.5-1-1.1-1.3-1.7c-0.3-0.7-0.5-1.5-0.5-2.4V26.1h-4.4 v-2.5h4.4V13h3v10.7h7.3v2.5h-7.3V49c0 1.2 0.4 2 1.2 2.6s1.7 0.9 2.8 0.9c1.2 0 2.3-0.2 3.2-0.6c0.9-0.4 1.4-0.7 1.6-0.8 L209.2 53.4z"
+            />
+            <path d="M229 26.4c-2.8 0.1-5.3 0.9-7.4 2.5c-2.1 1.6-3.5 3.8-4.4 6.5v19.5h-3V23.7h2.8v7.7c1.1-2.2 2.5-4 4.3-5.4 c1.8-1.4 3.7-2.2 5.7-2.4c0.4 0 0.8 0 1.1 0c0.3 0 0.6 0 0.8 0V26.4z"
+            />
+            <path d="M234.7 54.9V23.7h3v31.2H234.7z" />
+            <path d="M244.8 39.2c0-2.2 0.4-4.3 1.1-6.2c0.8-2 1.8-3.7 3.2-5.1s3-2.6 4.9-3.4c1.9-0.8 3.9-1.3 6.2-1.3 c2.8 0 5.3 0.6 7.5 1.9c2.1 1.3 3.8 3.1 4.9 5.3l-2.9 1c-0.9-1.7-2.2-3.1-4-4c-1.7-1-3.6-1.5-5.6-1.5c-1.7 0-3.3 0.3-4.8 1 c-1.5 0.7-2.8 1.6-3.9 2.8c-1.1 1.2-2 2.6-2.6 4.2c-0.6 1.6-0.9 3.4-0.9 5.2c0 1.9 0.3 3.7 1 5.3s1.5 3.1 2.6 4.3 c1.1 1.2 2.4 2.2 3.9 2.9c1.5 0.7 3.1 1.1 4.7 1.1c1.1 0 2.1-0.2 3.2-0.5c1.1-0.3 2-0.7 2.9-1.3c0.9-0.5 1.7-1.1 2.3-1.8 c0.7-0.7 1.1-1.4 1.4-2.2l2.9 0.8c-0.4 1.1-1 2.1-1.8 3s-1.8 1.8-2.9 2.4c-1.1 0.7-2.4 1.2-3.7 1.6c-1.3 0.4-2.7 0.6-4.2 0.6 c-2.2 0-4.2-0.4-6.1-1.3c-1.9-0.9-3.5-2-4.9-3.5s-2.5-3.2-3.3-5.2C245.2 43.5 244.8 41.4 244.8 39.2z"
+            />
+            <path d="M305.1 19.4c-2.8-3.1-6.7-4.6-11.7-4.6c-4.2 0-7.2 0.8-9.1 2.4c-1.9 1.6-2.8 3.7-2.8 6.4 c0 1.4 0.2 2.5 0.7 3.4c0.5 0.9 1.2 1.7 2.2 2.3c1 0.6 2.3 1.2 3.9 1.6c1.6 0.5 3.5 0.9 5.6 1.3c2.3 0.5 4.4 1 6.2 1.6 c1.8 0.6 3.4 1.3 4.7 2.2c1.3 0.9 2.3 2 3 3.2c0.7 1.3 1 2.9 1 4.7c0 1.9-0.4 3.5-1.1 4.9s-1.8 2.6-3.1 3.5 c-1.3 0.9-2.9 1.7-4.8 2.1c-1.9 0.5-3.9 0.7-6.2 0.7c-6.6 0-12.3-2.1-16.9-6.4l1.6-2.5c1.8 1.9 4 3.4 6.6 4.5 c2.6 1.1 5.5 1.7 8.8 1.7c3.7 0 6.6-0.7 8.7-2c2.1-1.4 3.1-3.4 3.1-6.2c0-1.4-0.3-2.6-0.8-3.6c-0.5-1-1.4-1.8-2.5-2.5 c-1.1-0.7-2.5-1.3-4.2-1.9c-1.7-0.5-3.6-1-5.8-1.5c-2.3-0.5-4.3-1-6-1.5s-3.2-1.2-4.4-2c-1.2-0.8-2.1-1.8-2.7-3 c-0.6-1.2-0.9-2.6-0.9-4.4c0-1.9 0.4-3.6 1.1-5.1c0.7-1.5 1.8-2.7 3.1-3.8c1.3-1 2.9-1.8 4.7-2.3c1.8-0.5 3.9-0.8 6.1-0.8 c2.8 0 5.2 0.4 7.4 1.2c2.2 0.8 4.1 2.1 5.9 3.8L305.1 19.4z"
+            />
+            <path d="M316 11.1h3.1v37.6c0 1.2 0.3 2.1 1 2.8c0.7 0.7 1.6 1 2.7 1c0.4 0 1 0 1.6-0.2c0.6-0.1 1.2-0.2 1.7-0.4 l0.6 2.4c-0.7 0.3-1.5 0.5-2.5 0.7c-1 0.2-1.9 0.3-2.6 0.3c-1.7 0-3-0.5-4-1.5c-1-1-1.5-2.4-1.5-4.1V11.1z"
+            />
+            <path d="M330.7 54.9V23.7h3v31.2H330.7z" />
+            <path d="M340.9 39.2c0-2.2 0.4-4.3 1.1-6.2c0.8-2 1.8-3.7 3.2-5.1s3-2.6 4.9-3.4c1.9-0.8 3.9-1.3 6.2-1.3 c2.8 0 5.3 0.6 7.5 1.9c2.1 1.3 3.8 3.1 4.9 5.3l-2.9 1c-0.9-1.7-2.2-3.1-4-4c-1.7-1-3.6-1.5-5.6-1.5c-1.7 0-3.3 0.3-4.8 1 c-1.5 0.7-2.8 1.6-3.9 2.8c-1.1 1.2-2 2.6-2.6 4.2c-0.6 1.6-0.9 3.4-0.9 5.2c0 1.9 0.3 3.7 1 5.3s1.5 3.1 2.6 4.3 c1.1 1.2 2.4 2.2 3.9 2.9c1.5 0.7 3.1 1.1 4.7 1.1c1.1 0 2.1-0.2 3.2-0.5c1.1-0.3 2-0.7 2.9-1.3c0.9-0.5 1.7-1.1 2.3-1.8 c0.7-0.7 1.1-1.4 1.4-2.2l2.9 0.8c-0.4 1.1-1 2.1-1.8 3s-1.8 1.8-2.9 2.4c-1.1 0.7-2.4 1.2-3.7 1.6c-1.3 0.4-2.7 0.6-4.2 0.6 c-2.2 0-4.2-0.4-6.1-1.3c-1.9-0.9-3.5-2-4.9-3.5s-2.5-3.2-3.3-5.2C341.3 43.5 340.9 41.4 340.9 39.2z"
+            />
+            <path d="M389 55.5c-2.2 0-4.2-0.4-6.1-1.3c-1.9-0.9-3.5-2-4.9-3.5s-2.5-3.2-3.2-5.2c-0.8-2-1.2-4.1-1.2-6.3 c0-2.2 0.4-4.3 1.2-6.2c0.8-1.9 1.8-3.6 3.2-5.1c1.4-1.5 3-2.6 4.9-3.5c1.9-0.8 3.9-1.3 6.1-1.3c2.2 0 4.2 0.4 6.1 1.3 c1.9 0.9 3.5 2 4.8 3.5c1.4 1.5 2.4 3.2 3.2 5.1c0.8 1.9 1.2 4 1.2 6.1c0 0.2 0 0.5 0 0.8c0 0.3 0 0.5 0 0.6h-27.4 c0.1 1.8 0.5 3.5 1.3 5c0.7 1.5 1.6 2.9 2.7 4c1.1 1.1 2.4 2 3.8 2.6c1.4 0.6 3 1 4.6 1c1.1 0 2.2-0.2 3.2-0.4 c1.1-0.3 2-0.7 2.9-1.2c0.9-0.5 1.7-1.1 2.4-1.9c0.7-0.7 1.2-1.5 1.6-2.4l2.6 0.7c-0.5 1.1-1.2 2.2-2 3.1s-1.9 1.8-3 2.4 c-1.1 0.7-2.4 1.2-3.8 1.6C391.9 55.3 390.5 55.5 389 55.5z M401.3 38.1c-0.1-1.8-0.5-3.5-1.2-5c-0.7-1.5-1.6-2.8-2.7-3.9 c-1.1-1.1-2.4-2-3.8-2.6c-1.4-0.6-3-0.9-4.6-0.9c-1.6 0-3.2 0.3-4.6 0.9c-1.4 0.6-2.7 1.5-3.8 2.6c-1.1 1.1-2 2.4-2.6 4 c-0.7 1.5-1 3.2-1.2 5H401.3z"
+            />
+        </g>
+    </svg>
+ -->
+</a>
+
+        </header>
+        <nav>
+            <ul class="nav">
+                <li class="nav__item">
+                    <a href="/">Home</a>
+                </li>
+                <li class="nav__item">
+                    <a href="/portfolio">Portfolio</a>
+                </li>
+                <li class="nav__item">
+                    <a href="/blog">Blog</a>
+                </li>
+                <li class="nav__item">
+                    <a href="/about">About</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="wrapper">
+            <div class="content">
+
+                <section class="text-left">
+
+     
+   
+  
+    <div class="grid">
+        <article class="box grid col-50 forty-five">  
+            <div class="col-20 text-center">
+                  <p class="month">Feb</p>
+                  <p class="day">04</p>
+                  <p class="year">2016</p>
+            </div>
+            <div class="col-80">
+                <h4><a href="/blog/2016/02/ux-smackdown-snapchat/">UX Smackdown: Snapchat</a></h4>
+                Let's answer a few burning Snapchat UX questions, like: how did I add that snap to my stories? What does the recycle sign mean? And why are there so many boxes littered all over the place?
+            </div>
+        </article>
+    
+       
+   
+  
+        <article class="box grid col-50 forty-five">  
+            <div class="col-20 text-center">
+                <p class="month">Jan</p>
+                <p class="day">11</p>
+                <p class="year">2016</p>
+            </div>
+            <div class="col-80">
+                <h4><a href="/blog/2016/01/ive-been-busy/">I've Been Busy</a></h4>
+                Well the last 3/4ths of 2015 sure were busy! I'll be posting more soon.
+            </div>
+        </article>
+    </div>
+    
+       
+   
+  
+    <div class="grid">
+        <article class="box grid col-50 forty-five">  
+            <div class="col-20 text-center">
+                  <p class="month">Mar</p>
+                  <p class="day">22</p>
+                  <p class="year">2015</p>
+            </div>
+            <div class="col-80">
+                <h4><a href="/blog/2015/03/that-familiar-feeling/">That Familiar Feeling</a></h4>
+                I am now in halfway through code school. And I'm just now recalling the pain involved in learning a new language.
+            </div>
+        </article>
+    
+       
+   
+  
+        <article class="box grid col-50 forty-five">  
+            <div class="col-20 text-center">
+                <p class="month">Jan</p>
+                <p class="day">20</p>
+                <p class="year">2015</p>
+            </div>
+            <div class="col-80">
+                <h4><a href="/blog/2015/01/continuing-education/">Continuing Education</a></h4>
+                <p>The last half of 2014 was busy, as is evidenced by my (lack of) blog posts. I worked on a couple of huge projects, got a dog, went to Korea, and decided to go to code school.</p>
+
+
+            </div>
+        </article>
+    </div>
+    
+       
+   
+  
+    <div class="grid">
+        <article class="box grid col-50 forty-five">  
+            <div class="col-20 text-center">
+                  <p class="month">Jun</p>
+                  <p class="day">24</p>
+                  <p class="year">2014</p>
+            </div>
+            <div class="col-80">
+                <h4><a href="/blog/2014/06/contact-form-7-in-a-modal/">Using Contact Form 7 in a Modal in WordPress</a></h4>
+                <p>I ran into an issue recently where I had a page full of case study excerpts.  The client wanted to have the visitor request the full version of the case study through a modal that included a contact form.</p>
+
+
+            </div>
+        </article>
+    
+       
+   
+  
+        <article class="box grid col-50 forty-five">  
+            <div class="col-20 text-center">
+                <p class="month">Jun</p>
+                <p class="day">14</p>
+                <p class="year">2014</p>
+            </div>
+            <div class="col-80">
+                <h4><a href="/blog/2014/06/troubleshooting-code-for-front-end-dev-beginners/">The Beginner Front-End Dev's Guide to Troubleshooting Your Code</a></h4>
+                <p>Troubleshooting code is an art form.  For people new to the realm of design or front-end development, the process can be extremely frustrating.  Many are convinced their more experienced brethren know some form of black magic that allows them to solve the mysteries of a missing element, a transition-less button, or a non-popping pop-up.</p>
+
+
+            </div>
+        </article>
+    </div>
+    
+       
+   
+  
+    <div class="grid">
+        <article class="box grid col-50 forty-five">  
+            <div class="col-20 text-center">
+                  <p class="month">May</p>
+                  <p class="day">21</p>
+                  <p class="year">2014</p>
+            </div>
+            <div class="col-80">
+                <h4><a href="/blog/2014/05/color-gradations-using-sass/">Color Gradations Using SASS Control Directives</a></h4>
+                <p>I came across a problem recently where I wanted to gradually change the colors of a set of list items - but without assigning a class with a color to each one. Enter <a href="http://thesassway.com/intermediate/if-for-each-while">SASS Control Directives</a> (I thought these were just called functions but apparently I was wrong).</p>
+
+
+            </div>
+        </article>
+    
+       
+   
+  
+        <article class="box grid col-50 forty-five">  
+            <div class="col-20 text-center">
+                <p class="month">May</p>
+                <p class="day">15</p>
+                <p class="year">2014</p>
+            </div>
+            <div class="col-80">
+                <h4><a href="/blog/2014/05/flyouts-as-a-web-pattern/">Flyouts, Panels, Off-Canvas Content: Revisiting a Not-So-New Pattern</a></h4>
+                <p>I’ve been working on some complex web applications recently that require a lot of user input, including a credit card payment application and an energy monitoring application.  Since reducing the amount of user input isn’t an option (though it would be nice), we began utilizing the flyout (also called a side panel, off-canvas content pattern, aside, etc.) to better help our users complete tasks and view related information.</p>
+
+
+            </div>
+        </article>
+    </div>
+    
+       
+   
+  
+    <div class="grid">
+        <article class="box grid col-50 forty-five">  
+            <div class="col-20 text-center">
+                  <p class="month">Mar</p>
+                  <p class="day">25</p>
+                  <p class="year">2014</p>
+            </div>
+            <div class="col-80">
+                <h4><a href="/blog/2014/03/freelancer-money-management/">Freelancer Money Management Techniques</a></h4>
+                <p>As a freelancer and contractor, it’s important to know exactly where your money is going. My friend Kate runs a <a href="http://twentiesinyourpocket.com/">personal finance blog</a> and recently asked me to write about my perspective on money management as a freelancer.</p>
+
+
+            </div>
+        </article>
+    
+       
+   
+  
+        <article class="box grid col-50 forty-five">  
+            <div class="col-20 text-center">
+                <p class="month">Mar</p>
+                <p class="day">20</p>
+                <p class="year">2014</p>
+            </div>
+            <div class="col-80">
+                <h4><a href="/blog/2014/03/busting-css-cache-in-wordpress/">Busting the CSS Cache in WordPress</a></h4>
+                <p>I have been updating my class website’s look and feel, so the site sometimes looks broken due to all of my CSS changes.</p>
+
+
+            </div>
+        </article>
+    </div>
+    
+       
+   
+  
+    <div class="grid">
+        <article class="box grid col-50 forty-five">  
+            <div class="col-20 text-center">
+                  <p class="month">Mar</p>
+                  <p class="day">19</p>
+                  <p class="year">2014</p>
+            </div>
+            <div class="col-80">
+                <h4><a href="/blog/2014/03/ui-transitions/">UI Transitions: The Good, the Bad, and the Coded</a></h4>
+                <p>A couple of weeks ago at the <a href="http://www.meetup.com/florida-web-developers/">Central Florida Web Developers Meetup</a> I gave a talk about UI Transitions.</p>
+
+
+            </div>
+        </article>
+    
+    
+
+</section>
+
+
+
+            </div>
+        </div>
+    </section>
+    <div>
+                <footer class="footer">
+        <p>
+        &copy;
+        <span class="js-year"></span> MetricSlice, LLC</p>
+        <div class="aside-icons">
+                <a href="tel:404-694-1204">
+                    <svg class="icon">
+                        <use xlink:href="#phone" />
+                    </svg>
+                </a>
+                <a href="mailto:info@metricslice.com">
+                    <svg class="icon">
+                        <use xlink:href="#email" />
+                    </svg>
+                </a>
+                <a href="http://twitter.com/thebeckyhamm">
+                    <svg class="icon">
+                        <use xlink:href="#twitter" />
+                    </svg>
+                </a>
+                <a href="http://codepen.io/thebeckyhamm">
+                    <svg class="icon">
+                        <use xlink:href="#codepen" />
+                    </svg>
+                </a>
+                <a href="http://github.com/thebeckyhamm">
+                    <svg class="icon">
+                        <use xlink:href="#github" />
+                    </svg>
+                </a>
+            </div>
+</footer>
+<!-- end footer-->
+
+<script>
+    var today = new Date();
+    var year = today.getFullYear();
+    var el = document.querySelector(".js-year");
+    el.innerHTML = el.innerHTML + year;
+</script>
+
+<!-- Javascript -->
+<script src="/scripts/jquery-1.11.3.min.js"></script>
+<script src="/scripts/menu.js"></script>
+<script src="/scripts/moment.min.js"></script>
+<!-- <script src="/scripts/sun-new.js"></script> -->
+            
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--[if gte IE 8]>     
+     <script type="text/javascript" src="/scripts/respond.min.js"></script>
+     <script type="text/javascript" src="/scripts/html5shiv.js"></script>
+     <![endif]-->
+
+</body>
+
+</html>
