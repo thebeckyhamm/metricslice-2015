@@ -1,8 +1,8 @@
-## 2015 Redesign of MetricSlice Site
+## 2018 Redesign of MetricSlice Site
 
 ###To Do List
-- JS fallbacks
-- ARIA roles
-- Older browser fallbacks
-- Integrate sunrise/sunset API
-- Schema attributes
+- blow up CSS and start over with BEM
+- write some blog posts
+- a11y
+- make a PWA for funsies
+
