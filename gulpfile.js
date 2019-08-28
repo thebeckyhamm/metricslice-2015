@@ -55,7 +55,7 @@ function watchFiles() {
       "./_pages/**/*",
       "./_posts/**/*",
       "./_projects/**/*",
-      "/.portfolio/*",
+      "./portfolio/*",
       "./about/*",
       "./blog/*"
     ],
