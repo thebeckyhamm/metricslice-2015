@@ -1,54 +1,44 @@
-
-
 /*------------------------------------*\
 	Variables & Extend Classes
 	\*------------------------------------*/
-	$white: #fff; /* white */
-	$prim-light: #278fb3; /* light-blue */   
-	$sec-dark: #33302a; /* gray */  
-	$black: #222;
-	$neon-green: #D0F15C;
-	$yellow: yellow;
-	$blue: #006BDF;
-	$magenta: #A10088;
-	$light-gray: #a4a4a4;
-    $lightest-gray: #F4F4F4;
-    $green: #042a3d;
-    $tan: #dab679;
+$white: #fff; /* white */
+$prim-light: #278fb3; /* light-blue */
+$sec-dark: #33302a; /* gray */
+$black: #222;
+$neon-green: #d0f15c;
+$yellow: yellow;
+$blue: #006bdf;
+$magenta: #a10088;
+$light-gray: #a4a4a4;
+$lightest-gray: #f4f4f4;
+$tan: #dab679;
 
+$padding: 1em;
 
-	$padding: 1em;
+$heading-font: "PT Serif", Helvetica, sans-serif;
+$base-font: "PT Sans", "Helvetica Neue", Helvetica, sans-serif;
+$comp-font: monospace;
 
-	$heading-font: 'PT Serif', Helvetica, sans-serif;
-	$base-font: 'PT Sans', 'Helvetica Neue', Helvetica, sans-serif;
-	$comp-font: monospace;
+@mixin transition($items) {
+  -webkit-transition: $items 0.3s ease-in-out;
+  -moz-transition: $items 0.3s ease-in-out;
+  -ms-transition: $items 0.3s ease-in-out;
+  -o-transition: $items 0.3s ease-in-out;
+  transition: $items 0.3s ease-in-out;
+}
 
+@mixin box-shadow($color) {
+  box-shadow: inset 0 0 0 1px darken($color, 10%);
+}
 
-	@mixin transition($items) {
-		-webkit-transition: $items 0.3s ease-in-out;  
-		-moz-transition: $items 0.3s ease-in-out;
-		-ms-transition: $items 0.3s ease-in-out;
-		-o-transition: $items 0.3s ease-in-out;
-		transition: $items 0.3s ease-in-out;
-	}
+@mixin bp($breakpoint) {
+  @media all and (min-width: $breakpoint) {
+    @content;
+  }
+}
 
-	@mixin box-shadow($color) {
-		box-shadow: inset 0 0 0 1px darken($color, 10%);
-	}
-
-	@mixin bp($breakpoint) {
-		@media all and (min-width: $breakpoint) {
-			@content;
-		}
-	}
-
-	$grandpa-bear: 75em;
-	$papa-bear: 60em;
-	$mama-bear: 46em;
-	$kid-bear: 40em;
-	$baby-bear: 30em;
-
-
-
-
-
+$grandpa-bear: 75em;
+$papa-bear: 60em;
+$mama-bear: 46em;
+$kid-bear: 40em;
+$baby-bear: 30em;

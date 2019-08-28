@@ -1,6 +1,5 @@
-
 html {
-    color: $white;
+  color: $sec-dark;
   font-size: 1.2em;
   font-family: $base-font;
   font-weight: 300;
@@ -11,7 +10,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: $heading-font; 
+  font-family: $heading-font;
   font-weight: 300;
   line-height: 100%;
   margin: 0 0 0.3em 0;
@@ -79,7 +78,7 @@ h1.inline {
 }
 
 .serif {
-    font-family: $heading-font;
+  font-family: $heading-font;
 }
 
 p,
@@ -92,7 +91,7 @@ li {
 }
 
 a {
-  color: $tan;
+  color: $blue;
 }
 
 .footer a {
@@ -183,7 +182,7 @@ hr {
 .month,
 .day,
 .year {
-    font-family: $heading-font;
+  font-family: $heading-font;
   line-height: 1;
   margin: 0;
 }
