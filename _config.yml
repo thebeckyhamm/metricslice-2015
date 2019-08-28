@@ -1,6 +1,6 @@
 name: MetricSlice LLC
-permalink: '/blog/:year/:month/:title/'
+permalink: "/blog/:year/:month/:title/"
 highlighter: rouge
 defaults:
-    values:
-      layout: "default"
+  values:
+    layout: "default"
